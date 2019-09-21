@@ -1,0 +1,130 @@
+<center>
+
+<!-- 1 -->
+
+<script>
+function call1(a2, a3, a4) {
+  document.write(a2);
+  if (a2>0) {
+    return a2;
+  }
+}
+var gall = 1 + 2 + 3;
+call1(gall);
+</script><br />
+
+<!-- 2 -->
+
+<script>
+function tellTime() {
+  var now = new Date();
+  var theHr = now.getHours();
+  var theMin = now.getMinutes();
+  document.write("Current time: "+ theHr + ":" + theMin);
+}
+tellTime();
+</script><br />
+
+<!-- 3 -->
+
+<script>
+function greetUser(greeting) {
+  document.write(greeting);
+  var loam = greeting + "polly";
+  return loam;
+}
+var loam = "Hello, there.";
+greetUser(loam);
+</script><br />
+
+<!-- 4 -->
+
+<script>
+var merchTot = 49;
+function calcTot(merchTot) {
+  var orderTot;
+  if (merchTot >= 100) {
+  orderTot = merchTot;
+  }
+  else if (merchTot < 50.01) {
+  orderTot = merchTot + 5;
+  }
+  else {
+  orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+  }
+  document.write(merchTot);
+  return orderTot;
+}
+//var merchTot = 49;
+calcTot(merchTot);
+</script>
+
+<!-- 5 -->
+
+<p id="ya"></p>
+<script>
+function func3() {
+	return "Cowboy";
+}
+document.getElementById("ya").innerHTML = func3();
+</script>
+
+<!-- 6 -->
+
+<p id="path"></p>
+<script>
+function func4(hit) {
+	hit = 7;
+	document.write(hit);
+	return hit;
+}
+var jurchen = 5;
+func4(jurchen);
+</script><br />
+
+<!-- 7 -->
+
+<script>
+function func5(cheese) {
+	//cheese = "milk product";
+	document.write(cheese);
+	//return "cow";
+}
+var yap = "belgian cow";
+func5(yap);
+</script><br />
+
+<!-- 8 -->
+
+<script>
+function userName(name) {
+	name = "daniyal"
+	
+	if(name === "daniyal") {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+if (userName(name) === true) {
+	document.write("Welcome!");
+}
+else {
+	document.write("Imposter!");
+}
+</script><br />
+
+<!-- 9 -->
+
+<script>
+var sum;
+function oneToTen(sum) {
+	for (var sum=1; sum<10; sum++) {
+		document.write(sum + "<br />");
+	}
+	//return sum;
+}
+document.write(oneToTen(sum) + "<br />");
+</script>
+</center>
