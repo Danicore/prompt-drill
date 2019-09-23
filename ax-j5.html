@@ -11,10 +11,8 @@
 <p>This bed is just right.</p>
 <script>
 var par = document.getElementsByTagName("p");
+par[1].onClick(par[1].innerHTML = "This SUV is too big.");
 document.write(par + "<br />");
-var text = par[1].innerHTML;
-var newText = par[1].innerHTML = "This SUV is too big.";
-document.write(newText);
 </script>
 </body>
 </html>
