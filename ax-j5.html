@@ -7,11 +7,13 @@
 </head>
 <body>
 <p>This bed is too small.</p>
-<p>This bed is too big.</p>
+<p id="p2">This bed is too big.</p>
 <p>This bed is just right.</p>
 <script>
 var par = document.getElementsByTagName("p");
-par[1].onClick(par[1].innerHTML = "This SUV is too big.");
+var p2 = document.getElementById("p2");
+change = () => par[1].innerHTML = "This SUV is too big.";
+p2.onclick = change;
 document.write(par + "<br />");
 </script>
 </body>
