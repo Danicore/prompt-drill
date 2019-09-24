@@ -14,15 +14,16 @@
     <p>D: Mammal</p>
     
     <script>
-        var ans = prompt("Your answer:");
+        setTimeout(function() {
+            var ans = prompt("Your answer:");
 
-        if (ans === "B" || "b") {
-            alert(true);
-        }
+            if (ans === "B" || "b") {
+                alert(true);
+            }
 
-        else {
-            alert(false);
-        }
+            else {
+                alert(false);
+            }, 2000);
     </script>
 </body>
 </html>
