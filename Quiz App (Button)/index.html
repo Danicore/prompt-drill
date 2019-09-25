@@ -10,11 +10,16 @@
 </head>
 <body>
     <h2>What is a snail?</h2>
-    <label>A: Insect<img id="c1" class="cross" src="images/cross.png" /></label>
-    <label>B: Mollusc<img id="t" class="tick" src="images/tick.png" /></label>
-    <label>C: Amphibian<img id="c3" class="cross" src="images/cross.png" /></label>
-    <label>D: Mammal<img id="c3" class="cross" src="images/cross.png" /></label>
-    
+    <form>
+    <label>A: Insect<input name="assassin" class="radio" type="radio" /><img id="c1" class="cross" src="images/cross.png" /></label>
+    <br />
+    <label>B: Mollusc<input name="assassin" class="radio" type="radio" /><img id="t" class="tick" src="images/tick.png" /></label>
+    <br />
+    <label>C: Amphibian<input name="assassin" class="radio" type="radio" /><img id="c2" class="cross" src="images/cross.png" /></label>
+    <br />
+    <label>D: Mammal<input name="assassin" class="radio" type="radio" /><img id="c3" class="cross" src="images/cross.png" /></label>
+    </form>
+
     <script>
         label.onclick = show;
         var show = () => {

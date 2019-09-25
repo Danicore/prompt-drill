@@ -2,6 +2,10 @@ p {
     width: 250px;
 }
 
+label {
+    display: block;
+}
+
 .tick, .cross {
     width: 20px;
     height: 20px;
