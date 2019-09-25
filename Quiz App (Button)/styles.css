@@ -6,6 +6,10 @@ label {
     display: block;
 }
 
+.radio {
+    visibility: hidden;
+}
+
 .tick, .cross {
     width: 20px;
     height: 20px;
