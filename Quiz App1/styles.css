@@ -1,0 +1,9 @@
+p {
+    width: 250px;
+}
+
+.tick, .cross {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
