@@ -11,7 +11,7 @@
 <body>
     <h2>What is a snail?</h2>
     <form>
-    <label>A: Insect<input id="c1h" name="assassin" class="radio" type="radio" /><img id="c1" class="cross" src="images/cross.png" /></label>
+    <label>A: Insect<input id="c1h" name="assassin" class="radio" type="radio" checked="checked" /><img id="c1" class="cross" src="images/cross.png" /></label>
     <br />
     <label>B: Mollusc<input id="th" name="assassin" class="radio" type="radio" /><img id="t" class="tick" src="images/tick.png" /></label>
     <br />
@@ -23,13 +23,30 @@
     <script>
         label.onclick = show;
         var show = () => {
+            var c1h = document.getElementById("c1h");
+            var th = document.getElementById("th");
+            var c2h = document.getElementById("c2h");
+            var c3h = document.getElementById("c3h");
+
+            var c1 = document.getElementById("c1");
+            var t = document.getElementById("t");
+            var c2 = document.getElementById("c2");
+            var c3 = document.getElementById("c3");
+
             switch (key) {
-                case value:
-                    
+                case "c1h.checked='checked'":
+                    c1.visibility="visible";
                     break;
-            
+                case "th.checked='checked'":
+                    t.visibility="visible";
+                    break;
+                case "c2h.checked='checked'":
+                    c2.visibility="visible";
+                    break;
+                case "c3h.checked='checked'":
+                    c3.visibility="visible";
+                    break;
                 default:
-                    break;
             }
         }
     </script>
