@@ -33,20 +33,20 @@
             var c2 = document.getElementById("c2");
             var c3 = document.getElementById("c3");
 
-            switch (key) {
-                case "c1h.checked='checked'":
-                    c1.visibility="visible";
-                    break;
-                case "th.checked='checked'":
-                    t.visibility="visible";
-                    break;
-                case "c2h.checked='checked'":
-                    c2.visibility="visible";
-                    break;
-                case "c3h.checked='checked'":
-                    c3.visibility="visible";
-                    break;
-                default:
+            if (c1h.checked === true) {
+                c1.style.visibility="visible";
+            }
+
+            else if (th.checked === true) {
+                t.style.visibility="visible";
+            }
+
+            else if (c2h.checked === true) {
+                c2.style.visibility="visible";
+            }
+
+            else if (c3h.checked === true) {
+                c3.style.visibility="visible";
             }
         }
     </script>

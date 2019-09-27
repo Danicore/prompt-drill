@@ -6,9 +6,9 @@ label {
     display: block;
 }
 
-.radio {
+/*.radio {
     visibility: hidden;
-}
+}*/
 
 .tick, .cross {
     width: 20px;
