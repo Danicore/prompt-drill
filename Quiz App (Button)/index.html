@@ -11,7 +11,7 @@
 <body>
     <h2>What is a snail?</h2>
     <form>
-    <label>A: Insect<input id="c1h" name="assassin" class="radio" type="radio" checked="checked" /><img id="c1" class="cross" src="images/cross.png" /></label>
+    <label>A: Insect<input id="c1h" name="assassin" class="radio" type="radio" /><img id="c1" class="cross" src="images/cross.png" /></label>
     <br />
     <label>B: Mollusc<input id="th" name="assassin" class="radio" type="radio" /><img id="t" class="tick" src="images/tick.png" /></label>
     <br />
@@ -21,7 +21,8 @@
     </form>
 
     <script>
-        label.onclick = show;
+        var label = document.getElementsByTagName("label");
+        
         var show = () => {
             var c1h = document.getElementById("c1h");
             var th = document.getElementById("th");
@@ -49,6 +50,8 @@
                 c3.style.visibility="visible";
             }
         }
+
+        label.onclick = show();
     </script>
 </body>
 </html>
